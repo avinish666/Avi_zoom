@@ -1,0 +1,133 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.landingPageContainer nav {
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.landingMainContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.landingMainContainer > div:first-child {
+  max-width: 500px;
+}
+
+.landingMainContainer h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.landingMainContainer p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.landingMainContainer div[role="button"] {
+  background: #d97500;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  width: fit-content;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.landingMainContainer div[role="button"]:hover {
+  transform: translateY(-3px);
+  background: #b25d00;
+}
+
+.landingMainContainer div[role="button"] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.landingMainContainer img {
+  height: 65vh;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .landingMainContainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .landingMainContainer img {
+    height: 50vh;
+    margin-top: 20px;
+  }
+}
+ 
+/* Container for the icons, aligns them horizontally */
+.social-icons-container {
+  display: flex;
+  gap: 160px;           /* space between icons */
+  align-items: center; /* vertically center */
+}
+
+/* Base style for both icons */
+a.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;  /* makes circle */
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+/* Image inside the icon */
+a.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Hover effect: scale up and subtle shadow */
+a.social-icon:hover {
+  transform: scale(1.5);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* WhatsApp brand color */
+a.social-icon.whatsapp {
+  background: #25D366;
+}
+
+/* YouTube brand color */
+a.social-icon.youtube {
+  background: #FF0000;
+}
+
