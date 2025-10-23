@@ -5,8 +5,8 @@ import { Link, useNavigate } from 'react-router-dom'
 export default function LandingPage() {
     const navigate = useNavigate();
 
-    const whatsappNumber = "917061666783"; // Include country code
-    const whatsappMessage = "Hello Avinish, I saw your website!";
+    const whatsappNumber = "919798878727"; // Include country code
+    const whatsappMessage = "Hello Rohit , I saw your website!";
     const youtubeLink = "https://youtube.com/@avinish27";
 
     return (
@@ -14,7 +14,7 @@ export default function LandingPage() {
             <nav>
                 <div className='navHeader'>
                     <h2>
-                        <span style={{ color: "blue" }}> Avinish </span> Video
+                        <span style={{ color: "blue" }}> Rohit Kumar  </span> Video
                         <span style={{ color: "red" }}> Call</span>
                     </h2>
                 </div>
@@ -31,7 +31,7 @@ export default function LandingPage() {
             <div className="landingMainContainer">
                 <div>
                     <h1><span style={{ color: "#FF9839" }}>Connect</span> with your loved Ones</h1>
-                    <p>Cover a distance by <span style={{ color: "#FF9839" }}> AVINISH </span> video call </p>
+                    <p>Cover a distance by <span style={{ color: "#FF9839" }}> Rohit  Kumar</span> video call </p>
 
                      <div className="social-icons-container">
  
@@ -68,7 +68,7 @@ export default function LandingPage() {
                  <br/>
                  <br/>
                     <div role='button'>
-                        <Link to={"/auth"}> Call to Avinish click !!!</Link>
+                        <Link to={"/auth"}> Call to Rohit click !!!</Link>
                     </div>
                 </div>
                 <div>
